@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
+using Microsoft.OpenApi.Validations;
 using Talabat.Repository.Data;
 
 namespace Talabat.APIs;
@@ -7,10 +8,11 @@ public class Program
     {
         public static async Task Main(string[] args)
         {
-        StoreContext dbContext = new /*StoreContext()*/;
-        await dbContext.Database.MigrateAsync(); //Update database to the latest migration
+        
 
         var webApplicationBuilder = WebApplication.CreateBuilder(args);
+
+
             #region Configure services
             // Add services to the container.
 
@@ -25,10 +27,28 @@ public class Program
         });
 
             #endregion
-            var app = webApplicationBuilder.Build();
-            #region Kastrel Middleware
-            // Configure the HTTP request pipeline.
-            if (app.Environment.IsDevelopment())
+            
+        var app = webApplicationBuilder.Build();
+
+        using var scope = app.Services.CreateScope();
+        var Services = scope.ServiceProvider;
+        var _dbContext = Services.GetRequiredService<StoreContext>();
+        var LoggerFactory = Services.GetRequiredService<ILoggerFactory>();
+        try
+        {
+            await _dbContext.Database.MigrateAsync(); // Apply & Update Database
+        }
+        catch (Exception ex)
+        {
+
+            var Logger = LoggerFactory.CreateLogger<Program>();
+            Logger.LogError(ex, "An error occurred during migration");
+        }
+
+
+        #region Kastrel Middleware
+        // Configure the HTTP request pipeline.
+        if (app.Environment.IsDevelopment())
             {
                 app.UseSwagger();
                 app.UseSwaggerUI();

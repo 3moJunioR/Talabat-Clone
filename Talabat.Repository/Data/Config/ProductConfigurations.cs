@@ -20,16 +20,18 @@ namespace Talabat.Repository.Data.Config
                 .IsRequired();
             builder.Property(P => P.PictureUrl)
                 .IsRequired();
-            builder.Property(P => P.Price)
-                .HasColumnType("decimal(18.2)");
+            builder.Property(p => p.Price)
+                .HasColumnType("decimal(18,2)");
 
             builder.HasOne(P => P.Brand)
                 .WithMany()
-            .HasForeignKey(P => P.BrandId);
+            .HasForeignKey(P => P.BrandId)
+              .OnDelete(DeleteBehavior.Restrict);
 
             builder.HasOne(P => P.Category)
                 .WithMany()
-                .HasForeignKey(P => P.CategoryId);
+                .HasForeignKey(P => P.CategoryId)
+                .OnDelete(DeleteBehavior.Restrict);
         }
     }
 }

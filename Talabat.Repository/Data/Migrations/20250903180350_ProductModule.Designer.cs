@@ -11,7 +11,7 @@ using Talabat.Repository.Data;
 namespace Talabat.Repository.Data.Migrations
 {
     [DbContext(typeof(StoreContext))]
-    [Migration("20250902192455_Product Module")]
+    [Migration("20250903180350_ProductModule")]
     partial class ProductModule
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -34,10 +34,7 @@ namespace Talabat.Repository.Data.Migrations
                     b.Property<int>("BrandId")
                         .HasColumnType("int");
 
-                    b.Property<int>("CategoryId1")
-                        .HasColumnType("int");
-
-                    b.Property<int>("CategoryIdId")
+                    b.Property<int>("CategoryId")
                         .HasColumnType("int");
 
                     b.Property<string>("Description")
@@ -59,9 +56,7 @@ namespace Talabat.Repository.Data.Migrations
 
                     b.HasIndex("BrandId");
 
-                    b.HasIndex("CategoryId1");
-
-                    b.HasIndex("CategoryIdId");
+                    b.HasIndex("CategoryId");
 
                     b.ToTable("Products");
                 });
@@ -110,21 +105,13 @@ namespace Talabat.Repository.Data.Migrations
 
                     b.HasOne("Talabat.Core.Entities.ProductCategory", "Category")
                         .WithMany()
-                        .HasForeignKey("CategoryId1")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("Talabat.Core.Entities.Product", "CategoryId")
-                        .WithMany()
-                        .HasForeignKey("CategoryIdId")
+                        .HasForeignKey("CategoryId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.Navigation("Brand");
 
                     b.Navigation("Category");
-
-                    b.Navigation("CategoryId");
                 });
 #pragma warning restore 612, 618
         }
