@@ -1,0 +1,12 @@
+C:\Users\ZT\source\repos\Talabat.Junior.Solution\Talabat.Service\bin\Debug\net6.0\Talabat.Service.deps.json
+C:\Users\ZT\source\repos\Talabat.Junior.Solution\Talabat.Service\bin\Debug\net6.0\Talabat.Service.dll
+C:\Users\ZT\source\repos\Talabat.Junior.Solution\Talabat.Service\bin\Debug\net6.0\Talabat.Service.pdb
+C:\Users\ZT\source\repos\Talabat.Junior.Solution\Talabat.Service\obj\Debug\net6.0\Talabat.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ZT\source\repos\Talabat.Junior.Solution\Talabat.Service\obj\Debug\net6.0\Talabat.Service.AssemblyInfoInputs.cache
+C:\Users\ZT\source\repos\Talabat.Junior.Solution\Talabat.Service\obj\Debug\net6.0\Talabat.Service.AssemblyInfo.cs
+C:\Users\ZT\source\repos\Talabat.Junior.Solution\Talabat.Service\obj\Debug\net6.0\Talabat.Service.csproj.CoreCompileInputs.cache
+C:\Users\ZT\source\repos\Talabat.Junior.Solution\Talabat.Service\obj\Debug\net6.0\Talabat.Service.sourcelink.json
+C:\Users\ZT\source\repos\Talabat.Junior.Solution\Talabat.Service\obj\Debug\net6.0\Talabat.Service.dll
+C:\Users\ZT\source\repos\Talabat.Junior.Solution\Talabat.Service\obj\Debug\net6.0\refint\Talabat.Service.dll
+C:\Users\ZT\source\repos\Talabat.Junior.Solution\Talabat.Service\obj\Debug\net6.0\Talabat.Service.pdb
+C:\Users\ZT\source\repos\Talabat.Junior.Solution\Talabat.Service\obj\Debug\net6.0\ref\Talabat.Service.dll

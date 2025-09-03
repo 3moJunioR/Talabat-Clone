@@ -5,9 +5,12 @@ using Talabat.Repository.Data;
 namespace Talabat.APIs;
 public class Program
     {
-        public static void Main(string[] args)
+        public static async Task Main(string[] args)
         {
-            var webApplicationBuilder = WebApplication.CreateBuilder(args);
+        StoreContext dbContext = new /*StoreContext()*/;
+        await dbContext.Database.MigrateAsync(); //Update database to the latest migration
+
+        var webApplicationBuilder = WebApplication.CreateBuilder(args);
             #region Configure services
             // Add services to the container.
 
