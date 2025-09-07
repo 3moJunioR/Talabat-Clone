@@ -37,6 +37,7 @@ public class Program
         try
         {
             await _dbContext.Database.MigrateAsync(); // Apply & Update Database
+            await StoreContextSeed.SeedAsync(_dbContext); // Seed Data
         }
         catch (Exception ex)
         {
