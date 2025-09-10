@@ -50,8 +50,7 @@
               "RelativeToolTip": "Talabat.APIs\\Controllers\\BaseApiController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-08T19:44:54.564Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-08T19:44:54.564Z"
             },
             {
               "$type": "Document",
@@ -61,7 +60,7 @@
               "RelativeDocumentMoniker": "Talabat.APIs\\Controllers\\ProductsController.cs",
               "ToolTip": "C:\\Users\\ZT\\source\\repos\\Talabat.Junior.Solution\\Talabat.APIs\\Controllers\\ProductsController.cs",
               "RelativeToolTip": "Talabat.APIs\\Controllers\\ProductsController.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAQwBUAAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAA1wB8AAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-08T19:44:07.995Z",
               "EditorCaption": ""
@@ -74,7 +73,7 @@
               "RelativeDocumentMoniker": "Talabat.Repository\\GenericRepository.cs",
               "ToolTip": "C:\\Users\\ZT\\source\\repos\\Talabat.Junior.Solution\\Talabat.Repository\\GenericRepository.cs",
               "RelativeToolTip": "Talabat.Repository\\GenericRepository.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAmwBkAAAA6AAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAAuwCEAAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-07T23:45:23.703Z",
               "EditorCaption": ""
@@ -89,8 +88,7 @@
               "RelativeToolTip": "Talabat.Core\\Repositories.Contract\\IGenericRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-07T23:39:00.872Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-07T23:39:00.872Z"
             },
             {
               "$type": "Document",
@@ -102,8 +100,7 @@
               "RelativeToolTip": "Talabat.APIs\\Program.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAB4AAABsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-02T19:30:50.589Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-02T19:30:50.589Z"
             }
           ]
         }
