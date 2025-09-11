@@ -30,16 +30,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 2,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 2,
@@ -62,8 +54,7 @@
               "RelativeToolTip": "Talabat.APIs\\Controllers\\ProductsController.cs",
               "ViewState": "AgIAABIAAAAAAAAAAAA1wB8AAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-08T19:44:07.995Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-08T19:44:07.995Z"
             },
             {
               "$type": "Document",
@@ -73,7 +64,7 @@
               "RelativeDocumentMoniker": "Talabat.Repository\\GenericRepository.cs",
               "ToolTip": "C:\\Users\\ZT\\source\\repos\\Talabat.Junior.Solution\\Talabat.Repository\\GenericRepository.cs",
               "RelativeToolTip": "Talabat.Repository\\GenericRepository.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAuwCEAAAA7AAAAAAAAAA==",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAACEAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-07T23:45:23.703Z",
               "EditorCaption": ""
