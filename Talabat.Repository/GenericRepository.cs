@@ -31,7 +31,7 @@ namespace Talabat.Repository
         {
             return await _dbContext.Set<Product>().Where(P => P.Id == id).Include(P => P.Brand)
                     .Include(P => P.Category).FirstOrDefaultAsync() as T;
-          return await _dbContext.Set<T>().FindAsync(id);
+         //return await _dbContext.Set<T>().FindAsync(id);
         }
     }
 }
