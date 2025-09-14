@@ -28,8 +28,8 @@ namespace Talabat.APIs.Controllers
         {
             var product = await _productRepo.GetAsync(id);
             if (product is null)
-                return NotFound(new {Message= "NotFound" , StatusCode= 404}); //404
-            return Ok(product); //200 ok
+                return NotFound(new {Message= "NotFound" , StatusCode= 404}); 
+            return Ok(product); 
         }
     }
 }
