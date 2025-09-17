@@ -20,7 +20,8 @@ namespace Talabat.APIs.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Product>>> GetProducts()
         {
-            var products = await _productRepo.GetAllAsync();
+            var spec = new ProductWithBrandAndCategorySpecifications();
+            var products = await _productRepo.GetAllWithSpecAsync(spec);
             return Ok(products);
         }
 
@@ -28,7 +29,7 @@ namespace Talabat.APIs.Controllers
         [HttpGet("{id}")]
         public async Task<ActionResult<Product>> GetProduct(int id)
         {
-            var spec = new ProductWithBrandAndCategorySpecifications();
+            var spec = new ProductWithBrandAndCategorySpecifications();   
             var product = await _productRepo.GetWithSpecAsync(spec);
             if (product is null)
                 return NotFound(new {Message= "NotFound" , StatusCode= 404}); 
