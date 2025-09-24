@@ -84,3 +84,4 @@ C:\Users\ZT\source\repos\Talabat.Junior.Solution\Talabat.APIs\obj\Debug\net6.0\r
 C:\Users\ZT\source\repos\Talabat.Junior.Solution\Talabat.APIs\obj\Debug\net6.0\staticwebassets.build.json.cache
 C:\Users\ZT\source\repos\Talabat.Junior.Solution\Talabat.APIs\bin\Debug\net6.0\AutoMapper.dll
 C:\Users\ZT\source\repos\Talabat.Junior.Solution\Talabat.APIs\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\ZT\source\repos\Talabat.Junior.Solution\Talabat.APIs\bin\Debug\net6.0\Talabat.APIs.staticwebassets.runtime.json
