@@ -11,7 +11,7 @@
   },
   {
     "ContainingType": "Talabat.APIs.Controllers.BuggyController",
-    "Method": "GetBadRequest",
+    "Method": "GetValidationError",
     "RelativePath": "api/Buggy/badrequest/{id}",
     "HttpMethod": "GET",
     "IsController": true,
@@ -39,6 +39,16 @@
     "ContainingType": "Talabat.APIs.Controllers.BuggyController",
     "Method": "GetServerError",
     "RelativePath": "api/Buggy/servererror",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Talabat.APIs.Controllers.BuggyController",
+    "Method": "GetUnauthorizedError",
+    "RelativePath": "api/Buggy/unauthorized",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,

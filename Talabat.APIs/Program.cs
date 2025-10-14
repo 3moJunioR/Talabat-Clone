@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 using Microsoft.OpenApi.Validations;
@@ -32,8 +33,25 @@ public class Program
         webApplicationBuilder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
 
         webApplicationBuilder.Services.AddAutoMapper(typeof(MappingProfiles));
-        #endregion
 
+        webApplicationBuilder.Services.Configure<ApiBehaviorOptions>(Options =>
+        {
+            Options.InvalidModelStateResponseFactory = (ActionContext) =>
+            {
+                var errors = ActionContext.ModelState.Where(P => P.Value.Errors.Count() > 0)
+                                                    .SelectMany(P => P.Value.Errors)
+                                                    .Select(E => E.ErrorMessage)
+                                                    .ToArray();
+                var validationErrorResponse = new Errors.ApiValidationErrorResponse()
+                {
+                    Errors = errors
+                };
+                return new BadRequestObjectResult(validationErrorResponse);
+            };
+        });
+
+        #endregion
+        
 
 
         var app = webApplicationBuilder.Build();

@@ -64,6 +64,18 @@
         }
       }
     },
+    "/api/Buggy/unauthorized": {
+      "get": {
+        "tags": [
+          "Buggy"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
     "/api/Products": {
       "get": {
         "tags": [
